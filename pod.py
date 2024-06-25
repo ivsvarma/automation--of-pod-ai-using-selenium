@@ -22,14 +22,14 @@ wait = WebDriverWait(driver, 20)
 
 # Log in to the portal
 username = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@name='email' and @type='text']")))
-username.send_keys("iv9056@srmist.edu.in")
+username.send_keys("")#enter mail clg
 time.sleep(1)
 print("Email entered successfully")
 
 
 
 password = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@data-ng-model='ngModel' and @placeholder='Password*']")))
-password.send_keys("Kittu@6558")
+password.send_keys("") # password fo this
 time.sleep(1)
 print("Password entered successfully")
 
@@ -97,7 +97,7 @@ time.sleep(1)
 
 
 elements = driver.find_elements(By.XPATH, "//div[contains(@class, 'MuiFormControl-root') and contains(@class, 'MuiTextField-root') and contains(@class, 'MuiFormControl-fullWidth')]//input[@placeholder='Sample Text']")
-values_to_send = ["python , html , css , c++", "https://github.com/ivsvarma", "https://leetcode.com/u/iv9056/", "covid bed management , weather application , todolist"]  
+values_to_send = ["  ", "  ", "   ", "    "] #your skills , you leet acc , github link , projects 
 for i in range(len(elements)):
     element = elements[i]
     value = values_to_send[i]
